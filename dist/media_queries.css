@@ -69,9 +69,9 @@
     .hide{
         display: block;
     }
-    .fleet{
+    /* .fleet{
         display: none;
-    }
+    } */
 
     /* menu section  */
     .wraps_container{
@@ -197,15 +197,16 @@
     .stor{
         width: 70%;
     }
-    /* our process setion  */
+    /* our process setion  
     .process_list{
         grid-template-columns: 100%;
         grid-template-rows: repeat(2, auto);
-    }
+    }*/
 
     /* gallery.html  */
-    .gallery{
+    .galleria{
         gap: 6px;
+        grid-template-columns: 100%;
     }
 }
 

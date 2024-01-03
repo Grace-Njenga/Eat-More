@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- output css  -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- media queries css  -->
+    <link rel="stylesheet" href="media_queries.css" />
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- animate on scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>EatMore Restaurant</title>
+</head>
+
+<body class="bg-noir font-hind-Madurai">
+    <!-- header section  -->
+    <section class="flex relative">
+        <header class="absolute head px-2 my-3">
+            <ion-icon size="large" class="logo text-primary mr-2 cursor-pointer " name="bonfire-outline"></ion-icon>
+            <!-- logo  -->
+            <h1 class="text-primary text-xl flex items-end cursor-pointer hover:text-plimary font-lora font-extrabold tracking-widest">
+                <span class="text-gris hover:text-plimary">Eat</span><span class="text-brown ">More</span>
+                <ion-icon class="text-xl md:text-2xl lg:text-2xl text-primary mr-2 cursor-pointer " name="bonfire-outline"></ion-icon>
+            </h1>
+
+            <!-- menu icon  -->
+            <ion-icon name="menu-sharp" class="menu text-3xl text-accent" aria-controls="icon-menu" aria-expanded="false"></ion-icon>
+
+            <!-- navigation pane  -->
+            <nav class="flex ">
+                <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="index.html" class="font-bold">Home</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="menu.html" class="font-bold">Menu</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="gallery.html" class="font-bold">Gallery</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="about.html" class="font-bold">About Us</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir active"><a href="#" class="font-bold">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <!-- section footer -->
+    <footer class="mt-2 bg-foot py-4 px-2 flex justify-between items-end">
+        <div>
+            <!-- logo -->
+            <h1 class="text-plimary text-lg flex items-end font-lora font-bold">
+                <span class="text-acent">Eat</span><span>More</span><ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-plimary" name="bonfire-outline"></ion-icon>
+            </h1>
+        </h1>
+        </div>
+
+        <div class="">
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="bonfire-outline"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-facebook"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-instagram"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-whatsapp"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-twitter"></ion-icon>
+        </div>
+    </footer>
+    <!-- ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- javascript  -->
+    <script src="script.js"></script>
+</body>
+</html>
