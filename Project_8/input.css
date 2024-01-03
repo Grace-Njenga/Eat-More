@@ -1,0 +1,577 @@
+/* font family  */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora:ital@1&family=Montserrat:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,::after,::before{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* navabar section  */
+.logo{
+    display: none;
+}
+.head{
+    max-width: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    background: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding-inline: 2rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+}
+.menu{
+    display: none;
+}
+.list_link{
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.list_link:hover{
+    color: #fdfffd;
+}
+.list_link::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #402E32;
+    left: 0;
+    right: 0%;
+    top: 100%;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    transform-origin: right;
+    pointer-events: none;
+}
+.list_link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.active{
+    color: #fdfffd;
+}
+.active::after{
+    transform: scaleX(1);
+}
+
+/* hero section */
+.hero{
+    height: 100dvh;
+    width: 100%;
+    background: url('./src/img/hero.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    /* position: relative; */
+}
+.content{
+    width: 90%;
+    height: 100%;
+    padding: 3em;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+.content>*{
+    position: relative;
+    z-index: 10;
+}
+.content::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #232323e0;
+    z-index: 0;
+}
+.lines{
+    position: relative;
+}
+.lines::after{
+    position: absolute;
+    content: '';
+    height: 1.5px;
+    width: 100%;
+    background-color: #fdfffd;
+    left: 0;
+    bottom: -15%;
+    border-radius: 1em;
+}
+
+/* about section  */
+.story{
+    height: auto;
+    margin-top: 1.5em;
+}
+.ss{
+    width: 95%;
+    margin: 0 auto;
+}
+.wrap{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    margin: 0 auto;
+}
+.fleet{
+    display: flex;
+}
+.fleet,
+.jc{
+    grid-column: span 1;
+}
+.fleet,
+.float_img{
+    width: 100%;
+    height: 100%;
+}
+.hide{
+    display: none;
+}
+.float_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.jc{
+    width: 90%;
+    margin: auto;
+    padding: 2em;
+}
+
+/* menu section  */
+.smenu{
+    width: 90%;
+    margin: 0 auto;
+}
+.special{
+    position: relative;
+}
+.special::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 15%;
+    background-color: #a06306;
+    left: 0;
+    bottom: -9%;
+    border-radius: 1em;
+}
+.wraps_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.wraps{
+    display: grid;
+    grid-template-rows: auto auto;
+    border-radius: 1.6em;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.wrap_1,
+.wrap_2{
+    width: 100%;
+    height: 100%;
+}
+.price{
+    padding: 1em ;
+}
+.wrap_2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrapy{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 390px;
+    gap: .95em;
+}
+
+/* reserve a table  */
+.reserve{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    gap: 1em;
+    width: 94%;
+    margin: 0 auto;
+}
+.i{
+    display: grid;
+    place-content: center;
+}
+
+/* testimonials  */
+.testify{
+    width: auto;
+    height: auto;  
+}
+.back{
+    position: relative;
+    background: url('./src/img/breakfast.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    z-index: 0;
+}
+.back::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* right: 0;
+    bottom: 0; */
+    background:  linear-gradient(to right top, 
+    rgba(31, 31, 31, 0.6), 
+    rgba(25, 25, 25, 0.7), 
+    rgba(19, 19, 19, 0.6), 
+    rgba(11, 11, 11, 0.7), 
+    rgba(0, 0, 0, 0.4)),url('./dist/macaroni_pasta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.swiper{
+    width: 800px;
+    height: 200px;
+    padding-bottom: 30px !important;
+    overflow: hidden;
+}
+.swiper-slide{
+    height: 90%;
+    width: 90%;
+}
+.swiper-slide .n{
+    z-index: 1;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.avatar{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #f4c377;
+}
+.avatar img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* swiper pagination  */
+.swiper-pagination> .swiper-pagination-bullet {
+    opacity: 1;
+    border: #f4c377 solid 1px;
+    background-color: transparent;
+}
+.swiper-pagination> .swiper-pagination-bullet-active {
+    background-color: #a06306;
+}
+.swiper-horizontal > .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+}
+
+/* chefs section */
+.chefs{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.chef_cont{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 80% 20%;
+    column-gap: 1em;
+    padding-top: 2em;
+    /* background-color: aqua; */
+}
+.chef_img,
+.gallery_img{
+    width: 100%;
+    height: 100%;
+}
+
+/* gallery section  */
+.gallery_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.chef_img img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.gallery_cont{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.inde{
+    margin-left: 2rem;
+}
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+  /* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  /* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* MENU.HTML CSS  */
+/* 1. hero section  */
+.menu_hero{
+    height: 100dvh;
+    width: 100%;
+    background: url('./src/img/menu_hero.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+/* appetizers section  */
+.appetizers,
+.main_course,
+.desserts{
+    width: 90%;
+    margin: 0 auto;
+}
+.appet_list{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 6em;
+    width: 100%;
+}
+.start{
+    grid-column: span 1;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* gap: 1em; */
+    width: 100%;
+}
+
+/* main course section  */
+.main_list{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1em;
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 6em;
+    width: 100%;
+}
+
+.image{
+    height: 60dvh;
+    width: 100%;
+}
+.image img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* desserts section  */
+.dessert_list{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1em;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 6em;
+    width: 100%;
+}
+
+
+/* about.html css styles  */
+/* hero section  */
+.about_hero{
+    height: 100dvh;
+    width: 100%;
+    background: url('./src/img/about_us.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: top;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+/* about who we are section  */
+.about_who{
+    width: 80%;
+    margin: 0 auto;
+}
+.who_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    grid-template-rows: auto;
+}
+.pitch{
+    grid-column: span 1;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    gap: 2rem;
+}
+.pitch_img{
+    width: 100%;
+    height: 100%;
+    grid-row: span 1;
+}
+.pitch_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pitch_content{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+/* our story section  */
+.stories{
+    height: 60dvh;
+    width: 100%;
+    background: url('./src/img/texture.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-position: center; */
+}
+.stor{
+    width: 50%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding-inline: 2rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+}
+
+/* our process section  */
+.process{
+    width: 95%;
+    margin: 0 auto;
+}
+.process_list{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+.process_cont{
+    /* width: 90%;
+    margin: 0 auto; */
+    display: grid;
+    place-content: center;
+}
+
+
+/* GALLERY.HTML STYLES  */
+.gallery_hero{
+    height: 100dvh;
+    width: 100%;
+    background: url('./src/img/gallery_hero.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

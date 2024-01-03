@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- output css  -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- media queries css  -->
+    <link rel="stylesheet" href="media_queries.css" />
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- animate on scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>EatMore Restaurant</title>
+</head>
+
+<body class="bg-noir font-hind-Madurai">
+    <!-- header section  -->
+    <section class="flex relative">
+        <header class="absolute head px-2 my-3">
+            <ion-icon size="large" class="logo text-primary mr-2 cursor-pointer " name="bonfire-outline"></ion-icon>
+            <!-- logo  -->
+            <h1 class="text-primary text-xl flex items-end cursor-pointer hover:text-plimary font-lora font-extrabold tracking-widest">
+                <span class="text-gris hover:text-plimary">Eat</span><span class="text-brown ">More</span>
+                <ion-icon class="text-xl md:text-2xl lg:text-2xl text-primary mr-2 cursor-pointer " name="bonfire-outline"></ion-icon>
+            </h1>
+
+            <!-- menu icon  -->
+            <ion-icon name="menu-sharp" class="menu text-3xl text-accent" aria-controls="icon-menu" aria-expanded="false"></ion-icon>
+
+            <!-- navigation pane  -->
+            <nav class="flex ">
+                <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir active"><a href="#" class="font-bold">Home</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="menu.html" class="font-bold">Menu</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="gallery.html" class="font-bold">Gallery</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="about.html" class="font-bold">About Us</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="#" class="font-bold">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <!-- hero section  -->
+    <section class="hero bg-hero relative font-montserrat">
+        <div class="content">
+            <h2 class="lines text-brown font-bold text-2xl font-lora">
+                Good Food, Great Vibes
+            </h2>
+            <p class="py-8 text-primary opacity-80 font-hind-Madurai">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa numquam dolorum culpa recusandae quis, totam ratione sequi at inventore sit obcaecati iure sapiente aperiam explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <!-- button  -->
+            <div><a href="#" class="cursor-pointer bg-accent text-primary px-3 py-3 rounded-md hover:text-brown hover:bg-primary">Book A Table</a></div>
+        </div>
+    </section>
+
+    <!-- section about  -->
+    <section class="story">
+        <div class="ss special">
+            <h2 class="lg:text-base text-brown font-lora">Special Momets</h2>
+            <p class="lg:text-2xl text-base text-primary ">About Us</p>
+        </div>
+        
+        <!-- container -->
+        <div class="wrap pt-5">
+            <div class="hide lg:hidden md:hidden float_img">
+                <img src="./src/img/hidden.jpg" alt="bowl of food" srcset="">
+            </div>
+
+            <div class="fleet gap-5">
+                <div class="float_img pt-5">
+                    <img src="./src/img/float_1.jpg" alt="">
+                </div>
+                <div class="float_img pb-5">
+                    <img src="./src/img/float_2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="jc justify-center text-primary">
+                <h2 class="lg:pb-3 md:pb-3 lg:text-xl text-base font-montserrat">Taste Perception</h2>
+                <p class="pb-3 font-lora text-brown text-2xl tracking-wide font-bold">Traditional and modern</p>
+                <p class="lg:pb-8 md:pb-3 pb-6 opacity-40">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, veritatis nemo exercitationem cum aliquam illo reprehenderit qui at dolorem velit, fugit dignissimos, dicta molestias suscipit.  Esse consectetur sit illum, fugit nostrum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sint. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+
+                <!-- button   -->
+                <div><a href="#" class="bg-accent text-primary px-3 py-3 rounded-md hover:text-brown hover:bg-primary">More About us!</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- menu section  -->
+    <section id="" class="smenu pt-8">
+        <div class="special mb-4">
+            <h2 class="lg:text-base text-brown font-lora">Delight</h2>
+            <p class="lg:text-2xl text-base text-primary">Todays Special Offer.</p>
+        </div>
+
+        <!-- swipper container -->
+        <div class="r">
+            <!--wrapper container swiper-wrapper -->
+            <div class="wraps_container ">
+                <!-- card 1 swipper slide -->
+                <div class="wraps mt-5">
+                    <div class="wrap_2">
+                        <img src="./src/img/menu_2.jpg" alt="">
+                    </div>
+
+                    <div class="wrap_1 bg-secondary grid place-content-center">
+                        <div class="price ">
+                            <h2 class="text-brown lg:text-3xl md:text-3xl text-base font-bold">$8.50</h2>
+                            <h3 class="text-primary font-lora lg:text-2xl md:text-2xl text-lg pt-3">Lunchtime Ham and Vegetable Salad</h3>
+    
+                            <!-- explanation  -->
+                            <p class="lg:py-7 opacity-40 text-primary">
+                                Juicy roasted chickens are seasoned and stuffed with lemons and thyme and served on top of soft delicious squash for an eay but elegant family dinner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2  swipper slide-->
+                <div class="wraps mt-5">
+                    <div class="wrap_2">
+                        <img src="./src/img/menu_1.jpg" alt="">
+                    </div>
+
+
+                    <div class="wrap_1 bg-secondary grid place-content-center">
+                        <div class="price ">
+                            <h2 class="text-brown lg:text-3xl text-base font-bold">$8.50</h2>
+                            <h3 class="text-primary italic font-lora lg:text-2xl md:text-2xl text-lg pt-3">Lunchtime Ham and Vegetable Salad</h3>
+    
+                            <!-- explanation  -->
+                            <p class="lg:py-7 opacity-40 text-primary">
+                                Juicy roasted chickens are seasoned and stuffed with lemons and thyme and served on top of soft delicious squash for an eay but elegant family dinner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 swipper slide -->
+                <div class="wraps mt-5">
+                    <div class="wrap_2">
+                        <img src="./src/img/menu_3.jpg" alt="">
+                    </div>
+
+
+                    <div class="wrap_1 bg-secondary grid place-content-center">
+                        <div class="price ">
+                            <h2 class="text-brown lg:text-3xl text-base font-bold">$8.50</h2>
+                            <h3 class="text-primary italic font-lora lg:text-2xl md:text-2xl text-lg pt-3">Lunchtime Ham and Vegetable Salad</h3>
+    
+                            <!-- explanation  -->
+                            <p class="lg:py-7 opacity-40 text-primary">
+                                Juicy roasted chickens are seasoned and stuffed with lemons and thyme and served on top of soft delicious squash for an eay but elegant family dinner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- paginations -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            
+        
+    </section>
+
+    <!-- section Reservation -->
+    <section class="p-8 lg:my-6 md:my-6 my-3 bg-negro">
+        <div class="special lg:m-0 md:m-0 my-4">
+            <h2 class="lg:text-base text-brown font-lora">Explore</h2>
+            <p class="lg:text-2xl text-sm text-primary">Make a reservation.</p>
+        </div>
+
+        <div class="reserve">
+            <!-- content div  -->
+            <div class="i text-primary">
+                <h2 class="lg:text-5xl text-2xl italics font-bold text-brown font-lora mt-6">Discover The True Meaning of Taste</h2>
+                <p class="py-8 opacity-40">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+                    aut, dolores eum ipsum ea officiis tenetur maiores reiciendis
+                    veritatis quae odit corrupti magnam adipisci eaque, similique,
+                    itaque quisquam non voluptatum? Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Quis dolor minima officia?    Similique
+                    blanditiis dolorum accusamus atque officia nobis eos a explicabo
+                    autem debitis voluptas, consectetur ullam ex, provident saepe!
+                </p>
+                <!-- button  -->
+                <div><a href="#" class="bg-accent text-primary px-3 py-3 rounded-md hover:text-brown hover:bg-primary">Book A Table</a></div>
+            </div>
+
+            <!-- image div  -->
+            <div  class="reserved">
+                <img src="./src/img/reserve.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section reviews  -->
+    <section class="testify">
+        <!-- data-aos="fade-right" -->
+        <div data-aos="fade-right" data-aos-duration="3000" class="text-center pb-3">
+            <h2 class="font-lora tracking-wide text-lg text-primary py-3 ">Satisying people's hunger for life's simple pleasures</h2>
+            <p class=" text-primary pb-3 tracking-widest">What people are saying about us</p>
+            <div><a href="#" class="text-accent font-montserrat tracking-widest">+077 39 435 797</a></div>
+        </div>
+
+        <div class="back">
+            <div class="swiper">
+                <div class="swiper-wrapper py-4">
+                    <div class="swiper-slide">
+                        <div class="n lg:grid md:flex md:flex-row flex">
+                            <!-- image  -->
+                            <div class="avatar">
+                                <img src="./src/img/testify_3.jpg" class="object-left" alt="">
+                            </div>
+                            <div class="grid place-content-center">
+                                <p class="lg:text-base md:text-base text-xsm text-primary font-lora lg:w-full md:w-full w-80">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa accusantium quam, saepe dignissimos distinctio esse neque! Ea quibusdam, voluptate amet aut fugiat sint magnam ducimus laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="n">
+                            <!-- image  -->
+                            <div class="avatar">
+                                <img src="./src/img/testify_2.jpg" class="object-left" alt="">
+                            </div>
+                            <div class="grid place-content-center">
+                                <p class="lg:text-base md:text-base text-xsm  text-primary font-lora lg:w-full md:w-full w-80">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa accusantium quam, saepe dignissimos distinctio esse neque! Ea quibusdam, voluptate amet aut fugiat sint magnam ducimus laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="n">
+                            <!-- image  -->
+                            <div class="avatar">
+                                <img src="./src/img/testify_1.jpg" class="object-left" alt="">
+                            </div>
+                            <div class="grid place-content-center">
+                                <p class="lg:text-base md:text-base text-xsm text-primary font-lora lg:w-full md:w-full w-80">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa accusantium quam, saepe dignissimos distinctio esse neque! Ea quibusdam, voluptate amet aut fugiat sint magnam ducimus laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- swiper pagination  -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- section chefs  -->
+    <section class="chefs pb-2">
+        <div class="special lg:m-0 md:m-0 my-4">
+            <h2 class="lg:text-base text-brown font-lora">Review</h2>
+            <p class="lg:text-2xl text-sm text-primary">Meet Our Chefs.</p>
+        </div>
+
+        <div class="chef_cont">
+            <!-- chef 1 -->
+            <div class="inside">
+                <div class="chef_img"><img src="./src/img/chef_Bree.jpg" alt=""></div>
+
+                <div class="text-primary text-center">
+                    <h2 class="font-montserrat mt-4">Brenda Wanjiku</h2>
+                    <p class="opacity-20 font-lora ">Head Chef</p>
+                </div>
+            </div>
+
+            <!-- chef 2 -->
+            <div class="inside">
+                <div class="chef_img"><img src="./src/img/Chef_Joe.jpg" alt=""></div>
+
+                <div class="text-primary text-center">
+                    <h2 class="font-montserrat mt-4">Joshua Phillipe</h2>
+                    <p class="opacity-20 italic font-lora">Station Chef</p>
+                </div>
+            </div>
+
+            <!-- chef 3 -->
+            <div class="inside">
+                <div class="chef_img"><img src="./src/img/Chef_febrian.jpg" alt=""></div>
+
+                <div class="text-primary text-center">
+                    <h2 class="font-montserrat mt-4">Michael Nguyeng</h2>
+                    <p class="opacity-20 italic font-lora">Pastry Chef</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section gallery  -->
+    <section class="gallery mt-2 mb-4">
+        <div class="text-center lg:m-0 md:m-0 my-4">
+            <h2 class="lg:text-base text-brown font-lora">Excellence</h2>
+            <p class="lg:text-2xl text-sm text-primary">Our Gallery.</p>
+        </div>
+
+        <div class="gallery_cont pt-8">
+            <div class="gallery_img"><img src="./src/img/gallery (1).jpg" alt=""></div>
+
+            <!-- image 2  -->
+            <div class="gallery_img"><img src="./src/img/gallery (10).jpg" alt=""></div>
+
+            <!-- image 3  -->
+            <div class="gallery_img"><img src="./src/img/gallery (3).jpg" alt=""></div>
+
+            <!-- image 4  -->
+            <div class="gallery_img"><img src="./src/img/gallery (4).jpg" alt=""></div>
+
+            <!-- image 5  -->
+            <div class="gallery_img"><img src="./src/img/gallery (5).jpg" alt=""></div>
+
+            <!-- image 6  -->
+            <div class="gallery_img"><img src="./src/img/gallery (6).jpg" alt=""></div>
+
+            <!-- image 7  -->
+            <div class="gallery_img"><img src="./src/img/gallery (7).jpg" alt=""></div>
+
+            <!-- image 8  -->
+            <div class="gallery_img"><img src="./src/img/gallery (8).jpg" alt=""></div>
+
+            <!-- image 9  -->
+            <div class="gallery_img"><img src="./src/img/gallery (9).jpg" alt=""></div>
+
+            <!-- image 10  -->
+            <div class="gallery_img"><img src="./src/img/gallery (2).jpg" alt=""></div>
+        </div>
+    </section>
+
+    <!-- section footer -->
+    <footer class="mt-2 bg-foot py-4 px-2 flex justify-between items-end">
+        <div>
+            <!-- logo -->
+            <h1 class="text-plimary text-lg flex items-end font-lora font-bold">
+                <span class="text-acent">Eat</span><span>More</span><ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-plimary" name="bonfire-outline"></ion-icon>
+            </h1>
+        </h1>
+        </div>
+
+        <div class="">
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="bonfire-outline"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-facebook"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-instagram"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-whatsapp"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-twitter"></ion-icon>
+        </div>
+    </footer>
+    <!-- ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- javascript  -->
+    <script src="script.js"></script>
+</body>
+</html>

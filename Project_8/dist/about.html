@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- output css  -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- media queries css  -->
+    <link rel="stylesheet" href="media_queries.css" />
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- animate on scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>EatMore Restaurant</title>
+</head>
+
+<body class="bg-gris font-hind-Madurai">
+    <!-- header section  -->
+    <section class="flex relative">
+        <header class="absolute head px-2 my-3">
+            <ion-icon size="large" class="logo text-primary mr-2 cursor-pointer " name="bonfire-outline"></ion-icon>
+            <!-- logo  -->
+            <h1 class="text-primary text-xl flex items-end cursor-pointer hover:text-plimary font-lora font-extrabold tracking-widest">
+                <span class="text-gris hover:text-plimary">Eat</span><span class="text-brown ">More</span>
+                <ion-icon class="text-xl md:text-2xl lg:text-2xl text-primary mr-2 cursor-pointer " name="bonfire-outline"></ion-icon>
+            </h1>
+
+            <!-- menu icon  -->
+            <ion-icon name="menu-sharp" class="menu text-3xl text-accent" aria-controls="icon-menu" aria-expanded="false"></ion-icon>
+
+            <!-- navigation pane  -->
+            <nav class="flex ">
+                <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="index.html" class="font-bold">Home</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="menu.html" class="font-bold">Menu</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="gallery.html" class="font-bold">Gallery</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir active"><a href="#" class="font-bold">About Us</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="#" class="font-bold">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <!-- about us hero section  -->
+    <section class="about_hero">
+        <h2 class="lg:text-7xl md:text-5xl text-xl lg:text-plimary md:text-noir text-primary font-extrabold tracking-widest font-lora py-4">
+            About Us
+        </h2>
+        <p class="text-primary font-montserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores.</p>
+    </section>
+
+    <!-- who we are section  -->
+    <section class="about_who">
+        <div class="who">
+            <div class="grid place-content-center text-center pt-8">
+                <h1 class="tracking-widest font-extrabold font-montserrat">WHO WE ARE</h1>
+                <p class="font-lora">Everything you want to know</p>
+            </div>
+
+            <!-- grid of three -->
+            <div class="who_list my-8">
+                <div class="pitch">
+                    <!-- image div  -->
+                    <div class="pitch_img">
+                        <img src="./src/img/tangerine.jpg" alt="">
+                    </div>
+
+                    <!-- contents -->
+                    <div class="pitch_contents">
+                        <h2 class="font-semibold font-montserrat lg:text-lg md:text-lg text-sm">STRATEGY AND TIMING</h2>
+                        <p class="text-negro lg:text-lg md:text-lg text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla sequi praesentium necessitatibus repellendus quam sunt magni molestias delectus nihil cumque.</p>
+                    </div>
+                </div>
+
+                <!-- card 2  -->
+                <div class="pitch">
+                    <!-- image div  -->
+                    <div class="pitch_img">
+                        <img src="./src/img/pumpkin.jpg" alt="">
+                    </div>
+
+                    <!-- contents -->
+                    <div class="pitch_contents">
+                        <h2 class="font-semibold font-montserrat lg:text-lg md:text-lg text-sm">LEADERS OF TOMORROW</h2>
+                        <p class="text-negro lg:text-lg md:text-lg text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla sequi praesentium necessitatibus repellendus quam sunt magni molestias delectus nihil cumque.</p>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="pitch">
+                    <!-- image div  -->
+                    <div class="pitch_img">
+                        <img src="./src/img/pizza.jpg" alt="">
+                    </div>
+
+                    <!-- contents -->
+                    <div class="pitch_contents">
+                        <h2 class="font-semibold font-montserrat lg:text-lg md:text-lg text-sm">BRAND-CENTERED BUYING</h2>
+                        <p class="text-negro lg:text-lg md:text-lg text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla sequi praesentium necessitatibus repellendus quam sunt magni molestias delectus nihil cumque.</p>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </section>
+
+    <!-- section our story -->
+    <section class="stories grid place-content-center">
+        <div class="stor">
+            <!-- contents div  -->
+            <h2 class="font-montserrat tracking-widest ">OUR STORY</h2>
+            <p class="font-lora text-accent">We aim to inspire</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum in eum exercitationem, neque, accusantium vitae quisquam quas minus magnam labore tempore cumque praesentium asperiores. Ut sit ducimus aliquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod facilis perspiciatis et nulla eveniet reiciendis quasi autem, molestias aperiam tenetur, quis animi quisquam sapiente. </p>
+        </div>
+    </section>
+
+    <!-- section our process  -->
+    <section class="process pt-8">
+        <div class="process_list">
+            <div class="process_cont" data-aos="zoom-out"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
+                <h2 class="font-lora tracking-widest font-extrabold text-lg text-accent">
+                    OUR PROCESS
+                </h2>
+
+                <p class="py-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, maxime explicabo! Temporibus quibusdam ipsa optio obcaecati quam ab tempora repellat, fugit illum rerum nam ex dolores ipsum alias perspiciatis fugiat?<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aspernatur!<br>
+                    Lorem ipsum dolor sit Lorem, ipsum dolor.
+                </p>
+            </div>
+
+            <div class="image">
+                <img src="./src/img/fillet.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section footer -->
+    <footer class="mt-2 bg-foot py-4 px-2 flex justify-between items-end">
+        <div>
+            <!-- logo -->
+            <h1 class="text-plimary text-lg flex items-end font-lora font-extrabold">
+                <span class="text-acent">Eat</span><span>More</span><ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-plimary" name="bonfire-outline"></ion-icon>
+            </h1>
+        </h1>
+        </div>
+
+        <div class="">
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="bonfire-outline"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-facebook"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-instagram"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-whatsapp"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-twitter"></ion-icon>
+        </div>
+    </footer>
+    <!-- ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- javascript  -->
+    <script src="script.js"></script>
+</body>
+</html>

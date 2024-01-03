@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- output css  -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- media queries css  -->
+    <link rel="stylesheet" href="media_queries.css" />
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- animate on scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>EatMore Restaurant</title>
+</head>
+
+<body class="bg-noir font-hind-Madurai">
+    <!-- header section  -->
+    <section class="flex relative">
+        <header class="absolute head lg:px-2 md:px-2 px-0 my-3">
+            <ion-icon size="large" class="logo text-primary mr-2 cursor-pointer " name="bonfire-outline"></ion-icon>
+            <!-- logo  -->
+            <h1 class="text-primary text-xl flex items-end cursor-pointer hover:text-plimary font-lora font-extrabold tracking-widest">
+                <span class="text-gris hover:text-plimary">Eat</span><span class="text-brown ">More</span>
+                <ion-icon class="text-xl md:text-2xl lg:text-2xl text-primary mr-2 cursor-pointer " name="bonfire-outline"></ion-icon>
+            </h1>
+
+            <!-- menu icon  -->
+            <ion-icon name="menu-sharp" class="menu text-3xl text-accent" aria-controls="icon-menu" aria-expanded="false"></ion-icon>
+
+            <!-- navigation pane  -->
+            <nav class="flex ">
+                <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="index.html" class="font-bold">Home</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir active"><a href="#" class="font-bold ">Menu</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="gallery.html" class="font-bold">Gallery</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="about.html" class="font-bold">About Us</a></li>
+                    <li class="list_link font-montserrat tracking-wide lg:text-primary md:text-primary text-noir"><a href="#" class="font-bold">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <!-- menu hero  -->
+    <section class="menu_hero">
+        <h2 class="lg:text-7xl md:text-5xl text-xl lg:text-plimary md:text-noir text-primary font-extrabold tracking-widest font-lora">
+            OUR MENU
+        </h2>
+        <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores.</p>
+    </section>
+
+    <!-- section apetizers  -->
+    <section class="appetizers">
+        <div data-aos="zoom-in"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine" class="my-8 grid place-content-center text-center text-gris">
+            <p class="text-sm font-lora font-bold tracking-widest">Starters</p>
+            <h1 class="text-2xl font-montserrat tracking-widest">APPETIZERS</h1>
+        </div>
+
+        <!-- grid layout of appetizers  -->
+        <div class="appet_list grid font-montserrat">
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    FOUR CHEESE GARLIC BREAD <br>
+                    <em class="text-gris font-lora">Toasted French bread topped with oregano, cheddar</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 320</p>
+            </div>
+
+            <!-- starter 2 -->
+            <div class="start">
+                <!-- description -->
+                <p class="text-accent">
+                    SHRIMP SCAMPI <br>
+                    <em class="text-gris font-lora">Jumbo shrimp sauteed in wite wine, butter and garlic</em>
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 250</p>
+            </div>
+
+            <!-- starter 3 -->
+            <div class="start">
+                <!-- description -->
+                <p class="text-accent">
+                    FRIED CALAMARI <br>
+                    <em class="text-gris font-lora">Beaded calamari, lightly friend in canola oil</em>
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 380</p>
+            </div>
+
+            <!-- starter 4 -->
+            <div class="start">
+                <!-- description -->
+                <p class="text-accent">
+                    PEACHY JALAPENO GUACAMOLE <br>
+                    <em class="text-gris font-lora">Grounded cumin, avocados, pealed and cubed</em>
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 380</p>
+            </div>
+
+            <!-- starter 5 -->
+            <div class="start">
+                <!-- description -->
+                <p class="text-accent">
+                    RASTRAMI ROLL <br>
+                    <em class="text-gris font-lora">Spreadable cream cheese, crumbled blue cheese</em>
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 290</p>
+            </div>
+
+            <!-- starter 6 -->
+            <div class="start">
+                <!-- description -->
+                <p class="text-accent ">
+                    BROWNIE BATTER DIP <br>
+                    <em class="text-gris font-lora">Cream cheese, softened butter, brown sugar</em>
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 250</p>
+            </div>
+
+            <!-- starter 7 -->
+            <div class="start">
+                <!-- description -->
+                <p class="text-accent">
+                    CAPRESE SALAD KABOBS <br>
+                    <em class="text-gris font-lora">Cherry-size fresh mozzarella cheese balls</em>
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 230</p>
+            </div>
+
+            <!-- starter 8 -->
+            <div class="start">
+                <!-- description -->
+                <p class="text-accent">
+                    SHRIMP SCAMPI <br>
+                    <em class="text-gris font-lora">Jumbo shrimp sauted in white wine, butter and garlic</em>
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 170</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section main course -->
+    <section class="image my-8">
+        <img src="/dist/src/img/rice.jpg" alt="fried rice" >
+    </section>
+    <section class="main_course">
+        <div data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine" class="my-8 grid place-content-center text-center text-gris">
+            <p class="text-sm font-lora font-bold tracking-widest">Reservations</p>
+            <h1 class="text-2xl font-montserrat">MAIN COURSES</h1>
+        </div>
+
+        <!-- grid layout of appetizers  -->
+        <div class="main_list grid font-montserrat">
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    CORN FED CHICKEN <br>
+                    <em class="text-gris font-lora">Wild mushroom, truffle potatoes, braised leeks, carrots</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 1700</p>
+            </div>
+
+            <!-- main 2 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    NDUJA PORK CHICKEN TERRINE <br>
+                    <em class="text-gris font-lora">Smoaked duck breast, pistachio, smoaked pancetta</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 4100</p>
+            </div>
+
+            <!-- main 3 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    PAN SEARED SCALLIOPS <br>
+                    <em class="text-gris font-lora">Saffron, celerac puree, black pudding, parma ham</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 2900</p>
+            </div>
+
+            <!-- main 4 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    BAKED CAMEMBERT <br>
+                    <em class="text-gris font-lora">Red onion marmalade, garlic faccocio bread, grilled figs</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 2500</p>
+            </div>
+
+            <!-- main 5 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    BRAISED OX CHEEK RAVIOLI <br>
+                    <em class="text-gris font-lora">Mediterrainean olives casserole, celerac puree, mushrooms</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 2300</p>
+            </div>
+
+            <!-- main 6 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    NDUJA PORK CHICKEN TERRINE <br>
+                    <em class="text-gris font-lora">Smoaked duck breast, pistachio, smoaked pancetta</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 4100</p>
+            </div>
+
+            <!-- main 7 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    BEEF BURGER MEAL <br>
+                    <em class="text-gris font-lora">Classic greek salad, barrel aged feta cheese, pitta bread</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 3200</p>
+            </div>
+
+            <!-- main 8 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    ROASTED LAMB RUMP <br>
+                    <em class="text-gris font-lora">Grilled lamb cutlets, pomegranate glaze, butternut squash</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 2500</p>
+            </div>
+
+            <!-- main 9 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    PAN SEARED SEA BASS <br>
+                    <em class="text-gris font-lora">Saffron and mussel's broth, mew potatoes, edomome beans</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 3800</p>
+            </div>
+
+            <!-- main 10 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    KING PRAWNS AND LOBSTER <br>
+                    <em class="text-gris font-lora">Creamy saffron, sauce Verge</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 3800</p>
+            </div>
+
+            <!-- main 11 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    CITRUS CURED SALMON <br>
+                    <em class="text-gris font-lora">Hordewash creme frache, bettroot moouse, olive oil</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 4100</p>
+            </div>
+
+            <!-- main 12 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    PAN SEARED SEA BASS <br>
+                    <em class="text-gris font-lora">Saffron and mussel's broth, mew potatoes, edomome beans</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 3800</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section desserts -->
+    <section class="image my-8">
+        <img src="/dist/src/img/pork.jpg" alt="Pork bbq" >
+    </section>
+    <section class="desserts">
+        <div data-aos="zoom-out"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine" class="my-8 grid place-content-center text-center text-gris">
+            <p class="text-sm font-lora font-bold tracking-widest">Sweet Dreams</p>
+            <h1 class="text-2xl font-montserrat">DESSERTS</h1>
+        </div>
+
+        <!-- grid layout of desserts  -->
+        <div class="dessert_list grid font-montserrat">
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    CREOLE CREAM CHEESECAKE <br>
+                    <em class="text-gris font-lora">Creole cream cheese, chocolate and warm Caramel</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 1700</p>
+            </div>
+
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    LEMON MERINGUE PIE <br>
+                    <em class="text-gris font-lora">Dark chocolate moouse, candided pecan crunch and carousel</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 3200</p>
+            </div>
+
+            <!-- desert 3 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    BANANA FOSTER <br>
+                    <em class="text-gris font-lora">Bananas with caribbean rum served with vanill ice cream</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 4100</p>
+            </div>
+
+            <!-- dessert 4  -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    SOUTHAN PECAN PIE <br>
+                    <em class="text-gris font-lora">Warm Buttery caramel, chocolate syrup and ice cream</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 2500</p>
+            </div>
+
+            <!-- desset 5  -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    CREOLE CREAM CHEESECAKE <br>
+                    <em class="text-gris font-lora">Creole cream cheese, chocolate and warm Caramel</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 1700</p>
+            </div>
+
+            <!-- dessert 6 -->
+            <div class="start" >
+                <!-- description -->
+                <p class="text-accent">
+                    TEXAS APPLE COBBLER <br>
+                    <em class="text-gris font-lora">Southern pecan streusel, creole cream and cheese ice cream</em>
+                    
+                </p>
+
+                <!-- price -->
+                <p class="text-accent font-bold text-right font-montserrat">KES 3600</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- lone image  -->
+    <section class="image my-8">
+        <img src="/dist/src/img/dessert.jpg" alt="Ice cream with Caramel" >
+    </section>
+
+    <!-- section footer -->
+    <footer class="mt-2 bg-foot py-4 px-2 flex justify-between items-end">
+        <div>
+            <!-- logo -->
+            <h1 class="text-plimary text-lg flex items-end font-lora font-extrabold">
+                <span class="text-acent">Eat</span><span>More</span><ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-plimary" name="bonfire-outline"></ion-icon>
+            </h1>
+        </h1>
+        </div>
+
+        <div class="">
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="bonfire-outline"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-facebook"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-instagram"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-whatsapp"></ion-icon>
+            <ion-icon class="text-xl md:text-2xl lg:text-2xl text-plimary mr-2 cursor-pointer hover:text-primary" name="logo-twitter"></ion-icon>
+        </div>
+    </footer>
+
+    <!-- ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- javascript  -->
+    <script src="script.js"></script>
+</body>
+</html>
