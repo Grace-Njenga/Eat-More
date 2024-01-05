@@ -9,6 +9,9 @@
     /* navigation pane  */
     .head{
         position: fixed;
+        background-color: #402E32;
+        top: 0;
+        margin: 0;
     }
     .head h1{
         display: none;
@@ -220,9 +223,9 @@
     .hide{
         display: block;
     }
-    .fleet{
+    /* .fleet{
         display: none;
-    }
+    } */
 
     /* about section  */
     .jc{

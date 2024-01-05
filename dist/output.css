@@ -1046,6 +1046,7 @@ body{
 
 .logo{
   display: none;
+  font-size: medium;
 }
 
 .head{
@@ -1110,12 +1111,13 @@ body{
   transform: scaleX(1);
 }
 
-/* hero section */
+/* HERO SECTION  */
 
 .hero{
   height: 100dvh;
+  max-width: 100%;
   width: 100%;
-  background: url('./src/img/hero.jpg');
+  background: url('./src/img/wok-dish-1363477_1920.jpg');
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
