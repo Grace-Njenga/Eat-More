@@ -97,7 +97,9 @@
                 </p>
 
                 <!-- button   -->
-                <div><a href="#" class="bg-accent text-primary px-3 py-3 rounded-md hover:text-brown hover:bg-primary">More About us!</a></div>
+                <div><a href="about.html"class="bg-accent text-primary px-3 py-3 rounded-md hover:text-brown hover:bg-primary">More About us!</a></div>
+
+               
             </div>
         </div>
     </section>
@@ -201,12 +203,72 @@
                     autem debitis voluptas, consectetur ullam ex, provident saepe!
                 </p>
                 <!-- button  -->
-                <div><a href="#" class="bg-accent text-primary px-3 py-3 rounded-md hover:text-brown hover:bg-primary">Book A Table</a></div>
+                <button id="bookBtn" class="bg-accent text-primary px-3 py-3 rounded-md hover:text-brown hover:bg-primary w-40">Book A Table</button>
             </div>
 
             <!-- image div  -->
             <div  class="reserved">
                 <img src="./src/img/reserve.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- overlay form  -->
+        <div id="bookingFormOverlay" class="hidden fixed inset-0 bg-gris bg-opacity-50 z-50">
+            <div class="flex justify-center items-center h-full">
+                <div class="relative bg-noir p-6 rounded shadow-md">
+                    <div class="flex justify-between pb-4">
+                        <h2 class="font-montserrat font-bold text-primary text-lg">BOOK A TABLE</h2>
+
+                        <ion-icon size="large" id="closeBtn" name="close-circle-outline" class="text-accent absolute right-0 top-0"></ion-icon>
+                    </div>
+
+                    <!-- FORM  -->
+                    <form action="" class="font-montserrat">
+                        <div class="flex gap-4">
+                            <div>
+                                <label for="name" class="block mb-2 text-primary">Name:</label>
+                                <input type="text" id="name" name="name" class=" border rounded px-3 py-2 mb-4 w-full" required> 
+                            </div>
+                            
+                            <div>
+                                <!-- your email  -->
+                                <label for="email" class="block mb-2 text-primary">Email:</label>
+                                <input type="email" id="email" name="email" class=" border rounded px-3 py-2 mb-4 w-full" required>
+                            </div>
+                            
+                        </div>
+
+                        <!-- phone number  -->
+                        <label for="tel" class="block mb-2 text-primary">Your Phone Number:</label>
+                        <input type="tel" id="tel" name="tel" class=" border rounded px-3 py-2 mb-4 w-full" required>
+
+                        <!-- persons and date  -->
+                        <div class="flex gap-4">
+                            <div>
+                                <label for="number" class="block mb-2 text-primary">Party Of:</label>
+                                <input type="number" id="number" name="number" class="text-noir border rounded px-3 py-2 mb-4 w-full" min="1" max="150" required> 
+                            </div>
+                            
+                            <div>
+                                <!-- Date  -->
+                                <label for="date" class="block mb-2 text-primary">Date:</label>
+                                <input type="date" id="date" name="datetime" class="text-noir border rounded px-3 py-2 mb-4 w-full" required>
+                            </div>
+
+                            <div>
+                                <!-- Date  -->
+                                <label for="time" class="block mb-2 text-noir">Time:</label>
+                                <input type="time" id="time" name="datetime" class="text-noir border rounded px-3 py-2 mb-4 w-full" required>
+                            </div>
+                        </div>
+
+                        <!-- buttons  -->
+                        <button type="submit" class="bg-accent hover:bg-primary text-white hover:text-noir font-bold py-2 px-4 rounded">
+                            Submit
+                        </button>
+                
+                    </form>
+                </div>
             </div>
         </div>
     </section>

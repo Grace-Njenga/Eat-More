@@ -612,6 +612,12 @@ input[type=email] {
     grid-row: span 1;
 }
 
+/* book a table  */
+#bookingFormOverlay {
+    display: none;
+    backdrop-filter: blur(5px);
+}
+
 
 
 

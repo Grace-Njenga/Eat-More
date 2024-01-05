@@ -35,6 +35,15 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+// book a table 
+document.getElementById('bookBtn').addEventListener('click', function() {
+  document.getElementById('bookingFormOverlay').style.display = 'block';
+});
+
+document.getElementById('closeBtn').addEventListener('click', function() {
+  document.getElementById('bookingFormOverlay').style.display = 'none';
+});
+
 // initialize aos 
 AOS.init();
 
