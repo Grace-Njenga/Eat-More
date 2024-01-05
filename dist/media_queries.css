@@ -208,6 +208,11 @@
         gap: 6px;
         grid-template-columns: 100%;
     }
+
+    /* contact.html  */
+    .box{
+        width: 90%;
+    }
 }
 
 @media (max-width: 868px) and (min-width: 501px){

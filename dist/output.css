@@ -1629,7 +1629,7 @@ body{
 }
 
 .box{
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   /* top: 40%; */
   position: absolute;
@@ -1669,6 +1669,8 @@ input[type=email] {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .addr{
