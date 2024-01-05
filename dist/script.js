@@ -1,11 +1,4 @@
 // JavaScript to toggle the menu on click of the toggle button
-// const navbarToggle = document.querySelector('.menu');
-// navbarToggle.addEventListener('click', () => {
-//   const navbarMenu = document.querySelector('.nav');
-//   navbarMenu.classList.toggle('abre');
-// });
-
-// JavaScript to toggle the menu on click of the toggle button
 const primaryNav = document.querySelector(".nav");
 const navToogle = document.querySelector(".menu");
 navToogle.addEventListener('click', () =>{
