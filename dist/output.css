@@ -669,6 +669,10 @@ video {
   place-content: center;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-end{
   align-items: flex-end;
 }
@@ -744,6 +748,10 @@ video {
 .object-left{
   -o-object-position: left;
      object-position: left;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .p-8{
@@ -1604,6 +1612,69 @@ body{
   gap: 12px;
 }
 
+/* CONTACT.HTML  */
+
+.contact{
+  height: 100dvh;
+  width: 100%;
+  background: url('./src/img/contact.jpg');
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  position: relative;
+  /* display: grid;
+    place-content: center;
+    text-align: center; */
+}
+
+.box{
+  width: 90%;
+  margin: 0 auto;
+  /* top: 40%; */
+  position: absolute;
+  bottom: 50%;
+  /* left: 50%; */
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: black;
+  resize: none;
+  outline: none;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.sep{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.addr{
+  grid-row: span 1;
+}
+
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(253 255 253 / var(--tw-bg-opacity));
@@ -1813,10 +1884,6 @@ body{
     color: rgb(253 255 253 / var(--tw-text-opacity));
   }
 }
-
-
-
-
 
 
 
